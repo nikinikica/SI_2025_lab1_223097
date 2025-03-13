@@ -1,0 +1,37 @@
+
+Креирав нов репозиториум на GitHub со име SI_2025_lab1_223097.
+Го клонирав локално со:
+
+git clone https://github.com/nikinikica/SI_2025_lab1_223097.git
+Додадов README.md и направив првичен commit:
+
+git add README.md  
+git commit -m "Initial commit"  
+git push origin master  
+
+Во GitHub Projects креирав 9 issues 
+Ги поврзав со репозиториумот.
+Избрав 3 issues и ги преместив во In Progress.
+GitHub автоматски генерираше гранки за нив.
+Креирање на локални гранки и преземање на промените:
+
+git fetch origin  
+git checkout -b 1-remove-a-task-by-name origin/1-remove-a-task-by-name  
+ 
+git commit -m "Implemented removeTask feature"  
+git push origin 1-remove-a-task-by-name  
+Истото го направив за другите две issues.
+
+Креирање на Pull Requests и Merge
+Отворив Pull Request за секоја имплементација.
+Два од трите PR-ови беа одобрени и merged во master.
+Финална синхронизација и документација
+Креирав logs.txt:
+
+git log --oneline --graph --all > logs.txt  
+Креирав 223097.txt и додадов документација.
+Ги додадов фајловите и направив финален commit:
+
+git add logs.txt 223097.txt  
+git commit -m "Final commit"  
+git push origin master  
